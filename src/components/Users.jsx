@@ -4,7 +4,7 @@ import useFetch from "../hooks/useFetch"
 const Users = () => {
 
     const {data} = useFetch("https://jsonplaceholder.typicode.com/users")
-    console.log(data)
+    // console.log(data)
 
   return (
     <>
