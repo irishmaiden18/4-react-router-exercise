@@ -19,11 +19,15 @@ const UserDetails = () => {
 
   return (
     <>
-        <h1>{data.username}'s Details</h1>
-        <p><b>Id: </b>{data.id}</p>
-        <p><b>Name: </b>{data.name}</p>
-        <p><b>Email: </b>{data.email}</p>
-        <p><b>Company Catchphrase </b>{data.company.catchPhrase}</p>
+        {data && (
+            <>
+                <h1>{data.username}'s Details</h1>
+                <p><b>Id: </b>{id}</p>
+                <p><b>Name: </b>{data.name}</p>
+                <p><b>Email: </b>{data.email}</p>
+                <p><b>Company Catchphrase </b>{data.company.catchPhrase}</p>
+            </>
+        )}
         <Link to="/users"><button>Go Back!</button></Link>
     </>
   )
